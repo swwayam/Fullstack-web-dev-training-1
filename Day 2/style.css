@@ -1,0 +1,24 @@
+.heading{
+    text-align: center;
+    
+}
+
+.sub-heading{
+    font-weight: 100;
+}
+
+.news{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.news-description{
+    width: 30%;
+    text-align: justify;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+
+
+
