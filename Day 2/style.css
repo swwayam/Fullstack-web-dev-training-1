@@ -9,6 +9,7 @@
 
 .news{
     display: flex;
+    flex-direction: row-reverse ;
     justify-content:center;
     align-items: center;
 }
@@ -19,7 +20,7 @@
 }
 
 .news-description{
-        
+
     text-align: justify;
     
     line-height: 1.5;
