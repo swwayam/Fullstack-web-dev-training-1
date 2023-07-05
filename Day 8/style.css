@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+}
+
+nav{
+    background-color: rgb(151, 104, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 60px;
+}
+
+div{
+    text-align: center;
+}
+
+textarea{
+    margin-top: 30px;
+    padding: 30px;
+}
+
+section{
+    text-align: center;
+}
+
+button{
+    border: 1px solid orange;
+    background-color: transparent;
+    padding:10px 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
