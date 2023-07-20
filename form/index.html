@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="name" placeholder="name">
+        <input type="password" id="pass" placeholder="password">
+        <button onclick="submit()">Submit</button>
+    <script>
+        const getData = async () => {
+            const data = await fetch("http://localhost:4000/")
+            const json = await data.json()
+            console.log(json)
+        }
+
+        getData()
+
+        const submit = async () => {
+            const name = document.getElementById("name")
+            const pass = document.getElementById("pass")
+
+            const sentData = fetch(
+                "http://localhost:4000/add/user",{
+
+                 method: "POST",
+                 
+                 body: JSON.stringify ({
+                    name: name.value,
+                    pass: pass.value
+                 }),
+
+                 headers: {
+                    "Content-Type": "application/json; charset=UTF-8"
+                 }
+
+                }
+            )
+
+            console.log(name.value)
+            console.log(pass.value);
+        }
+    </script>
+</body>
+</html>
